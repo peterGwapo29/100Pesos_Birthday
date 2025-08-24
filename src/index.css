@@ -1,17 +1,11 @@
 body {
   margin: 0;
-  overflow: hidden;
   font-family: "Inter", sans-serif;
-  height: 100vh;
-  touch-action: manipulation;
   background: linear-gradient(135deg, #dba8f9, #f3e8ff);
 }
 
 #app {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: 100vh;
 }
 
 #content {
@@ -152,4 +146,19 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  #content {
+    justify-content: start; /* don’t force vertical centering */
+    align-items: center;
+    padding-top: 60px; /* add breathing room */
+    padding-bottom: 60px;
+  }
+  #step1{
+    margin-top: 100px;
+  }
+  #start-btn{
+    width: 300px;
+  }
 }
