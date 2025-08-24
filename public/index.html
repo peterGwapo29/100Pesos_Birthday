@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Love!</title>
+    <link rel="stylesheet" href="/src/style/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div id="canvas-container"></div>
+
+      <div id="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+
+      <div id="content">
+        <!-- Step 1: Initial Reveal -->
+        <div class="step active" id="step1">
+          <div class="emoji heart-beat">❤️</div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">
+            Hi loveee!
+          </h1>
+          <p class="text-xl text-gray-700 mb-8">
+            I made something special for you...
+          </p>
+          <button class="btn" id="start-btn">
+            Click this if you wanna know. 🦄
+          </button>
+        </div>
+
+        <!-- Step 2: Birthday Message -->
+        <div class="step" id="step2">
+          <div class="emoji">🎉</div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">
+            HAPPY BIRTHDAY, LOVE!
+          </h2>
+          <p class="text-lg text-gray-700 mb-6">
+            It’s been a while since we started talking, and every moment since
+            has been nothing short of magical to me. I truly love talking to you
+            — your presence lights up my days in ways I never imagined possible.
+            You have this gentle way of making everything feel okay, even on the
+            hardest days. Thank you for being so genuine, kind, and
+            understanding. You’ve become such an important part of my life — a
+            constant source of joy, comfort, and inspiration. I’m so grateful
+            for all the moments we’ve shared, for the laughter, the long talks,
+            the honesty, and the bond that just keeps growing stronger. You’ve
+            brought a sense of peace to my heart, and for that, I’ll always be
+            thankful.
+          </p>
+          <button class="btn" id="next-btn-2">What makes you special?</button>
+        </div>
+
+        <!-- Step 3: Reasons You're Amazing -->
+        <div class="step" id="step3">
+          <h3 class="text-3xl md:text-4xl font-bold mb-8 text-gradient">
+            So what makes you special?
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div class="reason-card">
+              <div class="emoji text-3xl">💜</div>
+              <h3 class="text-xl font-bold mb-2 text-pink-600">
+                Your Kindness
+              </h3>
+              <p class="text-gray-700">
+                You always think of others and show so much love and care.
+              </p>
+            </div>
+            <div class="reason-card">
+              <div class="emoji text-3xl">💜</div>
+              <h3 class="text-xl font-bold mb-2 text-pink-600">
+                Your Strength
+              </h3>
+              <p class="text-gray-700">
+                No matter what life throws at you, you keep pushing forward with
+                courage.
+              </p>
+            </div>
+            <div class="reason-card">
+              <div class="emoji text-3xl">💜</div>
+              <h3 class="text-xl font-bold mb-2 text-pink-600">Your Heart</h3>
+              <p class="text-gray-700">
+                The way you love and stay genuine makes you truly one of a kind.
+              </p>
+            </div>
+          </div>
+          <button class="btn" id="next-btn-3">Click.</button>
+        </div>
+
+        <!-- Step 4: Memory Lane -->
+        <div class="step" id="step4">
+          <div class="emoji">📸</div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient">
+            “I have found the one whom my soul loves.” – Song of Solomon 3:4 I
+            believe God brought you into my life for a reason, and this — us —
+            feels like the start of something truly beautiful and meant to be.
+          </h2>
+          <p class="text-lg text-gray-700 mb-6">
+            So here’s to you — to your heart, your light, and your birthday! May
+            this year be filled with all your dreams coming true. And may we
+            face it hand in hand, side by side, heart to heart.
+          </p>
+          <button class="btn" id="next-btn-4">One Last Thing</button>
+        </div>
+
+        <!-- Step 5: Final Wish -->
+        <div class="step" id="step5">
+          <div class="emoji">IT'S OFFICIALLY YES!</div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gradient"></h2>
+          <p class="text-lg text-gray-700 mb-8">
+            Yes, it’s official now! I’m saying yes because you’ve shown me what
+            true love really means. I’m saying yes because with you, I feel
+            safe, valued, and genuinely happy. I’m saying yes because no matter
+            how imperfect life may be, everything feels right when I’m with you.
+            Most of all, I’m saying yes because I want a future with you — to
+            grow, to dream, and to face everything together.
+          </p>
+          <p class="text-xl font-semibold text-pink-600 mb-8">
+            Happy Birthday again, lovelove! 🎂❤️
+          </p>
+          <button class="btn" id="confetti-btn">Celebrate!</button>
+          <p class="mt-8 text-gray-500">
+            Let’s make this year unforgettable — together. 💍💫
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="/src/JS/index.js"></script>
+</html>
